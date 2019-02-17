@@ -1,0 +1,27 @@
+/*
+ * LESS
+*/
+
+// Variables
+@body-text: 'Open-Sans';
+@body-color: peru;
+@width: 10px;
+@height: @width +10px;
+body {
+    background-color: @body-color;
+}
+
+#header {
+    color: black;
+    .navigation {
+        font-size: 12px;
+ 
+        &:after {
+            width: 300px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        width: 800px;
+      }
+}
